@@ -50,7 +50,5 @@ public class Gamemanager : MonoBehaviour
             Rigidbody rb = selectedZombie.GetComponent<Rigidbody>();
             rb.AddForce(pushForce);
         }
-        time += Time.deltaTime;
-        timerText.text = "Time: " + time.ToString("f1") + "s";
     }
 }
